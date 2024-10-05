@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>rocks.xprs</groupId>
+  <artifactId>language</artifactId>
+  <packaging>jar</packaging>
+
+  <parent>
+    <groupId>rocks.xprs</groupId>
+    <artifactId>xprs</artifactId>
+    <version>0.4.0</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <name>xprs language</name>
+  <description>
+    This package contains the ANTLR language definitions of xprs and the
+    lexers and parsers to read the model files.
+  </description>
+  <url>http://xprs.rocks</url>
+  <inceptionYear>2016</inceptionYear>
+
+  <developers>
+    <developer>
+      <name>Ralph Borowski</name>
+      <email>ralph.borowski@borowski.it</email>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>MIT license</name>
+      <distribution>repo</distribution>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+    </license>
+  </licenses>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.antlr</groupId>
+      <artifactId>antlr4</artifactId>
+      <version>4.5.3</version>
+    </dependency>
+    <dependency>
+      <groupId>rocks.xprs</groupId>
+      <artifactId>sdk</artifactId>
+      <version>0.4.0</version>
+      <type>jar</type>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.antlr</groupId>
+        <artifactId>antlr4-maven-plugin</artifactId>
+        <version>4.5.3</version>
+        <executions>
+          <execution>
+            <id>antlr</id>
+            <goals>
+              <goal>antlr4</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+</project>

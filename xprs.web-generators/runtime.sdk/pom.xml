@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>rocks.xprs</groupId>
+  <artifactId>runtime.sdk</artifactId>
+  <packaging>jar</packaging>
+
+  <parent>
+    <groupId>rocks.xprs</groupId>
+    <artifactId>generators-parent</artifactId>
+    <version>0.3.0</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+  
+  <name>xprs runtime sdk</name>
+  
+  <dependencies>
+    <dependency>
+      <groupId>jakarta.platform</groupId>
+      <artifactId>jakarta.jakartaee-api</artifactId>
+      <version>10.0.0</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+  
+  <developers>
+    <developer>
+      <name>Ralph Borowski</name>
+      <email>ralph.borowski@borowski.it</email>
+    </developer>
+  </developers>
+  
+  <licenses>
+    <license>
+      <name>MIT license</name>
+      <distribution>repo</distribution>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+    </license>
+  </licenses>
+
+  <repositories>
+    <repository>
+      <id>bit-oss-releases</id>
+      <name>bit-oss-releases</name>
+      <url>https://maven.dev.borowski.it/artifactory/oss-releases</url>
+    </repository>
+  </repositories>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+  </properties>
+</project>

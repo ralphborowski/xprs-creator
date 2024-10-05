@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>rocks.xprs</groupId>
+  <artifactId>commons-parent</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+    
+  <name>commons parent</name>
+  
+  <modules>
+    <module>commons.mvc</module>
+  </modules>
+    
+  <organization>
+    <name>xprs Framework</name>
+    <url>https://xprs.rocks/</url>
+  </organization>
+    
+  <developers>
+    <developer>
+      <id>ralph.borowski</id>
+      <name>Ralph Borowski</name>
+      <organization>BOROWSKI IT GmbH</organization>
+      <organizationUrl>https://www.borowski.it/</organizationUrl>
+    </developer>
+  </developers>
+    
+  <licenses>
+    <license>
+      <name>MIT license</name>
+      <distribution>repo</distribution>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+    </license>        
+  </licenses>
+    
+  <distributionManagement>
+    <repository>
+      <id>bit-oss-releases</id>
+      <name>bit-oss-releases</name>
+      <url>https://maven.dev.borowski.it/artifactory/oss-releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>bit-oss-snapshots</id>
+      <name>bit-oss-snapshots</name>
+      <url>https://maven.dev.borowski.it/artifactory/oss-snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+    
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+</project>

@@ -1,0 +1,16 @@
+<project name="xprs code generator">
+  <body>
+    <menu name="Overview">
+      <item name="Home" href="index.html" />
+      <item name="Getting Started" href="getting-started/index.html" />
+    </menu>
+    <footer><![CDATA[(c) 2017, BOROWSKI IT GmbH.All rights reserved.]]></footer>
+  </body>
+  
+  <skin>
+    <groupId>org.apache.maven.skins</groupId>
+    <artifactId>maven-fluido-skin</artifactId>
+    <version>1.5</version>
+  </skin>
+      
+</project>

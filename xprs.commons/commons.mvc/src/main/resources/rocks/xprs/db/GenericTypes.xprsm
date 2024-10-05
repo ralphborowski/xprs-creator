@@ -1,0 +1,16 @@
+# 
+# This file summarizes the asina contatcs model files.
+#
+# (c) 2016, exelonix GmbH - All rights reserved.
+#
+
+PROJECT "xprs";
+BASEPACKAGE "rocks.xprs.db";
+
+DEFINE MODEL Entity
+WITH FIELDS
+  id Long PRIMARY KEY,
+  createDate DateTime,
+  createUser String(200),
+  modifyDate DateTime,
+  modifyUser String(200);

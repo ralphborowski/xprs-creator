@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>rocks.xprs</groupId>
+  <artifactId>generators</artifactId>
+  <packaging>jar</packaging>
+  <version>2020.08</version>
+
+  <name>xprs generators</name>
+  <description>
+    This package contains a sample set of generators.
+  </description>
+  <url>http://xprs.rocks</url>
+  <inceptionYear>2016</inceptionYear>
+
+  <developers>
+    <developer>
+      <name>Ralph Borowski</name>
+      <email>ralph.borowski@borowski.it</email>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>MIT license</name>
+      <distribution>repo</distribution>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+    </license>
+  </licenses>
+
+  <dependencies>
+    <dependency>
+      <groupId>rocks.xprs</groupId>
+      <artifactId>sdk</artifactId>
+      <version>0.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.freemarker</groupId>
+      <artifactId>freemarker</artifactId>
+      <version>2.3.29</version>
+    </dependency>
+  </dependencies>
+
+  <repositories>
+    <repository>
+      <id>bit-oss-releases</id>
+      <name>bit-oss-releases</name>
+      <url>https://maven.dev.borowski.it/repository/oss-releases</url>
+    </repository>
+  </repositories>
+
+  <distributionManagement>
+    <repository>
+      <id>bit-oss-releases</id>
+      <url>https://maven.dev.borowski.it/repository/oss-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>bit-oss-snapshots</id>
+      <url>https://maven.dev.borowski.it/repository/oss-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
+</project>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>rocks.xprs</groupId>
+  <artifactId>xprs</artifactId>
+  <version>0.4.0</version>
+  <packaging>pom</packaging>
+
+  <name>xprs Code Generator</name>
+
+  <modules>
+    <module>xprs.creator</module>
+    <module>xprs.language</module>
+    <module>xprs.sdk</module>
+  </modules>
+
+  <scm>
+    <connection>scm:hg:https://hg.dev.borowski.it/xprs/xprs.maven-plugin</connection>
+    <developerConnection>scm:hg:https://hg.dev.borowski.it/xprs/xprs.maven-plugin</developerConnection>
+    <url>https://hg.dev.borowski.it/xprs/xprs.maven-plugin</url>
+  </scm>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>3.6</version>
+        <dependencies>
+          <dependency>
+            <groupId>org.apache.maven.doxia</groupId>
+            <artifactId>doxia-module-markdown</artifactId>
+            <version>1.7</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+    </plugins>
+  </build>
+
+  <distributionManagement>
+    <repository>
+      <id>bit-oss-releases</id>
+      <name>bit-oss-releases</name>
+      <url>https://maven.dev.borowski.it/repository/oss-releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>bit-oss-snapshots</id>
+      <name>bit-oss-snapshots</name>
+      <url>https://maven.dev.borowski.it/repository/oss-snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+</project>
